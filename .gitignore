@@ -20,3 +20,10 @@ env/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+
+*.pyc
+generated_resumes/
+temp_uploads/
+
