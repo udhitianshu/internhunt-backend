@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from app.routes.api_routes import router as api_router
+from app.routes.resume_routes import router as resume_router
+
+
 
 app = FastAPI(
     title="InternHunt.AI",
@@ -9,6 +12,7 @@ app = FastAPI(
 
 # Include main routes
 app.include_router(api_router)
+app.include_router(resume_router)
 
 @app.get("/")
 def root():
